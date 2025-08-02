@@ -4,31 +4,31 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
-import NavBar from "./components/Navbar";
 import Contact from "./pages/Contact";
 import Certifications from "./pages/Certifications";
 import Experience from "./pages/Experience";
 import Sidebar from "./components/Sidebar";
-import FixedContainer from "./components/Container";
 
 export default function App() {
-  const [darkMode, setDarkMode] = useState(localStorage.getItem("theme") === "dark");
-
-  useEffect(()=>{
-    document.documentElement.classList.toggle("dark",darkMode);
-    localStorage.setItem("theme",darkMode ? "dark" : "light");
-  }, [darkMode]
+  const [darkMode, setDarkMode] = useState(
+    () => localStorage.getItem("theme") === "dark"
   );
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", darkMode);
+    localStorage.setItem("theme", darkMode ? "dark" : "light");
+  }, [darkMode]);
+
   return (
     <Router>
-      {/* 1. Main container uses flexbox */}
-      <div className="flex bg-gray-50 dark:bg-gray-900">
+      {/* NO MORE FLEXBOX HERE. This is just a simple container. */}
+      <div className="bg-gray-50 dark:bg-gray-900 min-h-screen">
         
-        {/* 2. Sidebar takes up a fixed width */}
+        {/* The Sidebar component will now position itself correctly */}
         <Sidebar />
         
-        {/* 3. Main content area grows to fill the remaining space */}
-        <main className="flex-grow p-6">
+        {/* KEY CHANGE: We add 'ml-60' to create space for the w-60 sidebar. */}
+        <main className="ml-60 p-6">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

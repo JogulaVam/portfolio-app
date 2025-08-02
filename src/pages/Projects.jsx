@@ -1,61 +1,65 @@
 import { motion } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
+import robot from "../assets/robot.jpg";
+import student from "../assets/student_image.png";
+import spam from "../assets/spam-image.png"
+import atm from "../assets/ATM.png"
 
 // --- Step 1: Organize all project data into a structured array ---
 const projectsData = [
   {
     id: 1,
     title: "ATM Monitoring System",
-    category: "Cognizant Internship",
+    category: "Leaning Project",
     // Replace with your actual project image path
-    image: "/images/atm-monitoring.png", 
+    image: atm, 
     description: [
       "Designed and implemented an ATM monitoring application with Admin and Technician roles.",
       "Admin monitors cash flow and temperature; Technician adjusts temperature and deposits cash.",
       "Integrated Azure IoT Hub to collect and display real-time sensor data.",
     ],
     techStack: ["Java", "MySQL", "Azure IoT Hub", "JSP"],
-    githubLink: "#", // Add your GitHub link
+    githubLink: "", // Add your GitHub link
     liveLink: null, // No live link for this one
   },
   {
     id: 2,
     title: "Self-Balancing Robot",
     category: "Hackathon Project",
-    image: "/images/self-balancing-robot.png",
+    image: robot,
     description: [
-      "Built an IoT-enabled self-balancing robot during a Cognizant hackathon.",
+      "Built an IoT-enabled self-balancing robot during a  hackathon.",
       "Integrated Arduino Nano, MPU6050 gyro sensor, and N20 Micro gear motors.",
       "Implemented a PID control algorithm to dynamically maintain balance and stability.",
     ],
     techStack: ["Arduino (C++)", "PID Control", "Gyro Sensor", "IoT"],
-    githubLink: "#",
+    githubLink: "",
     liveLink: null,
   },
   {
     id: 3,
     title: "Student Performance Website",
     category: "Academic Project",
-    image: "/images/student-performance.png",
+    image: student,
     description: [
         "Developed a web portal to track and display student academic performance.",
         "Features included grade entry, report generation, and data visualization.",
     ],
     techStack: ["Java", "JDBC", "MySQL", "HTML", "CSS"],
-    githubLink: "#",
+    githubLink: "https://github.com/JogulaVam/StudentPerformanceWebsite",
     liveLink: null,
   },
   {
     id: 4,
     title: "Spam Mail Prediction",
     category: "Machine Learning",
-    image: "/images/spam-prediction.png",
+    image: spam,
     description: [
         "Created a model to classify emails as spam or not using Natural Language Processing.",
         "Utilized Scikit-learn for model training and evaluation.",
     ],
     techStack: ["Python", "Scikit-learn", "Pandas", "NumPy"],
-    githubLink: "#",
+    githubLink: "",
     liveLink: null,
   },
 ];
@@ -112,7 +116,7 @@ export default function Projects() {
               <img
                 src={project.image || 'https://placehold.co/600x400/16a34a/white?text=Project'}
                 alt={project.title}
-                className="w-full h-56 object-cover transform transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-50 object-cover transform transition-transform duration-500 group-hover:scale-110"
               />
             </div>
             

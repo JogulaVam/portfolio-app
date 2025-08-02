@@ -7,37 +7,37 @@ const certificationsData = [
     title: "Software Engineering Simulation",
     issuer: "JP Morgan & Forage",
     icon: <ShieldCheck className="w-10 h-10 text-blue-500" />,
-    link: "#", // Add credential link here
+    link: "https://drive.google.com/file/d/1H3AwvhtoBCx9FjcsBmTBaWx-IuiMuS0B/view?usp=sharing", // Add credential link here
   },
   {
     title: "Data Analytics Virtual Experience",
     issuer: "IBM SkillsBuild",
     icon: <BarChart3 className="w-10 h-10 text-blue-400" />,
-    link: "#",
+    link: "https://drive.google.com/file/d/1sigid0l05nUxeXIW5A5flCUmSDk9LeDT/view?usp=drive_link",
   },
   {
     title: "PCAP: Programming Essentials in Python",
     issuer: "Cisco Networking Academy",
     icon: <Code className="w-10 h-10 text-red-500" />,
-    link: "#",
+    link: "https://drive.google.com/file/d/1e-S-mR-9Jb31vOAH88_rtIJmj5NUO5Zw/view?usp=drive_link",
   },
   {
     title: "Google Cloud Computing Foundations",
     issuer: "Google Cloud",
     icon: <Cloud className="w-10 h-10 text-yellow-500" />,
-    link: "#",
+    link: "https://drive.google.com/file/d/1tEa56OLid71ZVPiMu2Q8TWYfOk6JTP9i/view?usp=drive_link",
   },
   {
-    title: "Object-Oriented Programming",
-    issuer: "MATLAB",
+    title: "CCNAv7: Introduction to Networks",
+    issuer: "Cisco Netwroking Academy",
     icon: <Cpu className="w-10 h-10 text-orange-500" />,
-    link: "#",
+    link: "https://drive.google.com/file/d/1ntJ4Xq7GB26XTn6cfgNsCipITSIV8t_9/view?usp=sharing",
   },
   {
     title: "IT Essentials",
     issuer: "Cisco Networking Academy",
     icon: <Award className="w-10 h-10 text-red-500" />,
-    link: "#",
+    link: "https://drive.google.com/file/d/1nQTDLhO83QrBZwBE4gadzY6zRCMF_USA/view?usp=sharing",
   },
 ];
 

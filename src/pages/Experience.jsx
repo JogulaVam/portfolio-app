@@ -10,7 +10,6 @@ const experienceData = [
     duration: "Jun 2025 - Present",
     type: "Full-time",
     description: [
-      "Currently undergoing training in advanced software development principles and enterprise technologies.",
       "Contributing to internal projects and gaining hands-on experience in a corporate environment.",
     ],
     techStack: ["Java", "Spring Boot", "React", "Agile Methodologies"],
